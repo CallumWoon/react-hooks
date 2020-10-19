@@ -12,7 +12,13 @@ function App() {
         <h1>{ message }</h1>
         <h2>{ score }</h2>
         <button onClick={() => setScore(prevScore => prevScore + 1)}>
-          Increase score
+          Increase Score
+        </button>
+        <button onClick={() => setScore(prevScore => prevScore - 1)}>
+          Decrease Score
+        </button>
+        <button onClick={() => setScore(0)}>
+          Reset Score
         </button>
       </header>
     </div>
